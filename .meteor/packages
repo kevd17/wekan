@@ -32,7 +32,6 @@ service-configuration@1.0.11
 useraccounts:unstyled
 useraccounts:flow-routing
 wekan-ldap
-wekan-accounts-cas
 wekan-accounts-oidc
 
 # Utilities
@@ -92,3 +91,4 @@ mdg:meteor-apm-agent
 meteorhacks:unblock
 lucasantoniassi:accounts-lockout
 wekan-markdown
+wekan:accounts-cas

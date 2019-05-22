@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "lint": "eslint --ignore-pattern 'packages/*' .",
-    "test": "npm run --silent lint"
+    "test": "npm run --silent lint",
+    "start": "ROOT_URL=\"http://localhost:3000\" BROWSER_POLICY_ENABLED=false meteor run --settings settings.json"
   },
   "eslintConfig": {
     "extends": "@meteorjs/eslint-config-meteor"

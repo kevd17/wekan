@@ -1,1 +1,20 @@
-{}
+{
+    "cas": {
+        "baseUrl": "https://utilisateurs.agglo-royan.fr/cas",
+        "autoClose": true,
+        "validateUrl":"https://utilisateurs.agglo-royan.fr/cas/p3/serviceValidate",
+        "casVersion": 3.0,
+        "attributes": {
+            "debug" : true,
+            "mail" : "cas:email"
+        },
+        "allowedLdapGroups" : ["wekan"]
+    },
+    "public": {
+        "cas": {
+            "loginUrl": "https://utilisateurs.agglo-royan.fr/cas/login",
+            "serviceParam": "service",
+            "popup": true
+        }
+    }
+}

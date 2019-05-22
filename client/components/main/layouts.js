@@ -41,6 +41,11 @@ Template.userFormsLayout.onRendered(() => {
     T9n.setLanguage(i18nTagToT9n(i18nTag));
   }
   EscapeActions.executeAll();
+
+  // Autologin with CAS
+  if (Meteor.settings.public.cas) {
+    Meteor.loginWithCas();
+  }
 });
 
 Template.userFormsLayout.helpers({
