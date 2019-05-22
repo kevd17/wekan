@@ -29,3 +29,5 @@ versions.json
 .Trashes
 Thumbs.db
 ehthumbs.db
+nbproject/*
+yarn.lock
