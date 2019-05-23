@@ -617,7 +617,7 @@ if (Meteor.isServer) {
       return user;
     }
 
-    if (user.services.oidc) {
+    if (user.services && user.services.oidc) {
       const email = user.services.oidc.email.toLowerCase();
       user.username = user.services.oidc.username;
       user.emails = [{ address: email, verified: true }];
